@@ -1,5 +1,4 @@
 public class Task11 {
-    private static int sum;
 
     public static void main(String[] args) {
         int[] array = { 1, 2, 3, 4, 5, 6 };
@@ -11,13 +10,13 @@ public class Task11 {
         if (array == null || array.length == 0) {
             return 0;
         }
+        int suma = 0;
 
         for (int num : array) {
             if (num % 2 == 0) {
-                sum += num;
+                suma += num;
             }
         }
-
-        return sum;
+        return suma;
     }
 }

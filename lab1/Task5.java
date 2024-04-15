@@ -7,9 +7,7 @@ public class Task5 {
         Integer a = scanner.nextInt();
         Integer b = scanner.nextInt();
         Integer h = scanner.nextInt();
-        if (a <= b) {
-            System.out.println("Impossible");
-        } else {
+        if (a > b || a >= h) {
             int day = 0;
             int pidn = 0;
             while (pidn < h) {
@@ -21,6 +19,8 @@ public class Task5 {
             }
             System.out.println("Підніметися за " + day + " днів");
 
+        } else {
+            System.out.println("Impossible");
         }
         scanner.close();
     }
